@@ -22,7 +22,7 @@ const TrackListScreen = ({ navigation }) => {
                                 navigation.navigate('TrackDetail', { _id: item._id })
                             }
                         }>
-                            <ListItem key={item.id} bottomDivider>
+                            <ListItem key={item.id} >
                                 <Icon 
                                     name="chevron-right" 
                                     type="font-awesome"
@@ -30,7 +30,7 @@ const TrackListScreen = ({ navigation }) => {
                                 <ListItem.Content>
                                     <ListItem.Title>{item.name}</ListItem.Title>
                                 </ListItem.Content>
-                                <ListItem.Chevron />
+                                
                             </ListItem>
                         </TouchableOpacity>
                     )
